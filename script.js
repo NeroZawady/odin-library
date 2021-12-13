@@ -6,12 +6,14 @@ const buttonCancel = document.querySelector("#cancel");
 const buttonSubmit = document.querySelector("#submit");
 const books = [];
 
-function Book(title, author, pages, read, tr) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.tr = tr;
+class Book {
+    constructor(title, author, pages, read, tr) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.tr = tr;
+    }
 }
 
 initilizeBooks();
